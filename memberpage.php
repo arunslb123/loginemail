@@ -137,7 +137,12 @@ require('layout/header.php');
       </div>
       <div class="row">
       <div class="col-xs-6 col-xs-offset-2">
-      <input type="text" class="form-control" id="youtubelink" placeholder="Enter your favorite youtube video url">
+    <!--   <input type="text" class="form-control" id="youtubelink" placeholder="Enter your favorite youtube video url"> -->
+
+      <input type="text" name="youtubelink" id="youtubelink" class="form-control input-lg" placeholder="Enter your favorite youtube video url" >
+
+
+
       </div>
       <div class="col-xs-4">
 
