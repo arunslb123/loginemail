@@ -66,6 +66,20 @@ if(isset($_POST['submit'])){
 				':email' => $_POST['email'],
 				':active' => 'Yes'
 			));
+
+
+
+				$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
+			$stmt->execute(array(
+				':password' => 'pass',
+				':email' => 23,
+				':active' => 'aruncheck@ch.com'
+			));
+
+
+
+
+
 			$id = $db->lastInsertId('memberID');
 
 			//send email
