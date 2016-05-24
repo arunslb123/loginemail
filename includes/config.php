@@ -6,7 +6,7 @@ session_start();
 date_default_timezone_set('Europe/London');
 
 //database credentials
-define('DBHOST','lus-cdbr-azure-southcentral-e.cloudapp.net');
+define('DBHOST','us-cdbr-azure-southcentral-e.cloudapp.net');
 define('DBUSER','b5e6932691e7ad');
 define('DBPASS','431dfc7a');
 define('DBNAME','acsm_4729051611eebc5');
