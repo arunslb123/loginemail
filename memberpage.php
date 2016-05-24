@@ -140,7 +140,9 @@ require('layout/header.php');
       <input type="text" class="form-control" id="youtubelink" placeholder="Enter your favorite youtube video url">
       </div>
       <div class="col-xs-4">
-        <button type="button" class="btn btn-danger btn-color">Save it</button>
+
+
+        <input type="submit" name="submitvideo" value="Save it" class="btn btn-danger btn-color">
       </div>
       <br><br><br><br>
       </div>
