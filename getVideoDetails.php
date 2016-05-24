@@ -29,9 +29,21 @@ if (isset($_SESSION['username'])) {
 try{
 
 
+
+
+
     $result = $db->prepare('SELECT url, description, duration FROM urls where userName = :username');
 			$result->execute(array('username' => $username));
-			$row = $result->fetch(PDO::FETCH_ASSOC);
+			//$row = $result->fetch(PDO::FETCH_ASSOC);
+
+
+				while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
+    if ($outp != "[") {$outp .= ",";}
+    $outp .= '{"title":"'  . $rs["description"] . '",';
+    $outp .= '"url":"'   . $rs["url"]        . '",';
+    $outp .= '"time":"'. $rs["duration"]     . '"}'; 
+}
+$outp .="]";
 
 
 }
@@ -40,54 +52,7 @@ try{
 		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
 		}
  
-    if (!empty($row)) {
 
-    	echo "result is not empty";
-        // check for empty result
-        if (mysql_num_rows($row) > 0) {
- 
-            //$result = mysql_fetch_array($result);
- 
-            $urldetails= array();
-            $urldetails["url"] = $row["url"];
-            $urldetails["description"] = $row["description"];
-            $urldetails["duration"] = $row["duration"];
-            
-            // success
-            $row["success"] = 1;
- 
-            // user node
-            $row["urldetails"] = array();
- 
-            array_push($row["urldetails"], $urldetails);
- 
-            // echoing JSON response
-            echo json_encode($row);
-        } else {
-            // no product found
-            $row["success"] = 0;
-            $row["message"] = "No Datafound";
- 
-            // echo no users JSON
-            echo json_encode($row);
-        }
-    } else {
-    	echo "line 59 else";
-        // no product found
-        $row["success"] = 0;
-        $row["message"] = "No Datafound";
- 
-        // echo no users JSON
-        echo json_encode($row);
-    }
-} else {
-    // required field is missing
-
-    echo "line 70 else";
-    $row["success"] = 0;
-    $row["message"] = "Required field(s) is missing";
- 
-    // echoing JSON response
-    echo json_encode($row);
+    echo $outp;
 }
 ?>
