@@ -176,7 +176,7 @@ require('layout/header.php');
       <div class="col-xs-4">
 
 
-        <input type="submit" name="submitvideo" value="Save it" class="btn btn-danger btn-block btn-color">
+        <input type="submit" name="submitvideo" value="Save it" class="btn btn-danger btn-color">
       </div>
       <br><br><br><br>
       </div>
