@@ -14,7 +14,7 @@ if(isset($_POST['submitvideo'])){
 
 		$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
 			$stmt->execute(array(
-				':password' => 'pass',
+				':password' => '$_POST['youtubelink']',
 				':email' => 32,
 				':active' => 'aruncsheck@ch.com'
 			));
