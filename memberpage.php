@@ -12,7 +12,7 @@ if(isset($_POST['submitvideo'])){
 
 	try{
 
-	
+
 
 $videoid = $_POST['youtubelink'];
 $apikey = 'AIzaSyC_CL8D4U0BV3Ng5_rIdUZ6aoA0gfNggoI';
@@ -20,13 +20,18 @@ $apikey = 'AIzaSyC_CL8D4U0BV3Ng5_rIdUZ6aoA0gfNggoI';
 $json = file_get_contents('https://www.googleapis.com/youtube/v3/videos?id='.$videoid.'&key='.$apikey.'&part=snippet');
 $ytdata = json_decode($json);
 
+$interval = new DateInterval($ytdata['duration']);
+
+$duration = $interval->h * 3600 + $interval->i * 60 + $interval->s;
+
+
 // echo '<h1>Title: ' . $ytdata->items[0]->snippet->title . '</h1>';
 // echo 'Description: ' . $ytdata->items[0]->snippet->description;
 
 		$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
 			$stmt->execute(array(
 				':password' => $ytdata->items[0]->snippet->title,
-				':email' => 36,
+				':email' => $duration,
 				':active' => 'aruncsheckff@ch.com'
 			));
 
