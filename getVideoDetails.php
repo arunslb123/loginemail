@@ -23,9 +23,18 @@ if (isset($_SESSION['username'])) {
  
     // get a product from products table
  //select url,description,duration from urls where userName='arun';
+try{
 
+	
     $result = db->prepare('SELECT url, description, duration FROM urls WHERE userName = :username');
 			$result->execute(array('username' => $username));
+
+
+}
+
+			catch(PDOException $e) {
+		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
+		}
  
     if (!empty($result)) {
 
