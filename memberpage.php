@@ -15,8 +15,8 @@ if(isset($_POST['submitvideo'])){
 		$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
 			$stmt->execute(array(
 				':password' => 'pass',
-				':email' => 29,
-				':active' => 'aruncheck@ch.com'
+				':email' => 32,
+				':active' => 'aruncsheck@ch.com'
 			));
 
 
@@ -26,22 +26,6 @@ if(isset($_POST['submitvideo'])){
 		}
 
 	
-
-	}else{
-		try{
-
-		$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
-			$stmt->execute(array(
-				':password' => 'pass',
-				':email' => 29,
-				':active' => 'aruncheck@ch.com'
-			));
-
-
-	
-		} catch(PDOException $e) {
-		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
-		}
 
 	}
 
