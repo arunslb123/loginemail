@@ -36,8 +36,10 @@ try{
 			$result->execute(array('username' => $username));
 			//$row = $result->fetch(PDO::FETCH_ASSOC);
 
+			echo "after result";
 
-				while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
+
+				while($rs = $result->fetch(PDO::FETCH_ASSOC)) {
     if ($outp != "[") {$outp .= ",";}
     $outp .= '{"title":"'  . $rs["description"] . '",';
     $outp .= '"url":"'   . $rs["url"]        . '",';
