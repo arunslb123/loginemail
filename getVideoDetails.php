@@ -36,7 +36,7 @@ try{
 			// $result->execute(array('username' => $username));
 			//$row = $result->fetch(PDO::FETCH_ASSOC);
 
-			$stmt = $db->prepare('SELECT url,description,duration FROM urls WHERE userName = 'arun'');
+			$stmt = $db->prepare('SELECT url,description,duration FROM urls WHERE userName = $username');
 		//$stmt->execute(array(':username' => $username));
 		echo $stmt;
 		//$row = $stmt->fetch(PDO::FETCH_ASSOC);
