@@ -7,7 +7,7 @@ header("Content-Type: application/json; charset=UTF-8");
  */
  
 // array for JSON response
-$response = array();
+$row = array();
  
 // include db connect class
 require('includes/config.php');
