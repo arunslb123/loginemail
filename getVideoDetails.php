@@ -19,6 +19,7 @@ echo "in file";
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
     echo "check";
+    echo $username;
  
     // get a product from products table
  
@@ -27,6 +28,8 @@ if (isset($_SESSION['username'])) {
 			$result->execute(array('username' => $username));
  
     if (!empty($result)) {
+
+    	echo "result is not empty";
         // check for empty result
         if (mysql_num_rows($result) > 0) {
  
