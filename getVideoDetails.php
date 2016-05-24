@@ -24,7 +24,7 @@ if (isset($_SESSION['username'])) {
     // get a product from products table
  
 
-    $result = $this->_db->prepare('SELECT url, description, duration FROM urls WHERE username = :username');
+    $result = $this->_db->prepare('SELECT url, description, duration FROM urls WHERE userName = :username');
 			$result->execute(array('username' => $username));
  
     if (!empty($result)) {
