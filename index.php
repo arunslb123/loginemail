@@ -69,12 +69,7 @@ if(isset($_POST['submit'])){
 
 
 
-				$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
-			$stmt->execute(array(
-				':password' => 'pass',
-				':email' => 23,
-				':active' => 'aruncheck@ch.com'
-			));
+			
 
 
 

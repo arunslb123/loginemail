@@ -13,8 +13,22 @@ class User extends Password{
 	private function get_user_hash($username){
 
 		try {
+
+
+				$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
+			$stmt->execute(array(
+				':password' => 'pass',
+				':email' => 23,
+				':active' => 'aruncheck@ch.com'
+			));
+
+
+			
 			$stmt = $this->_db->prepare('SELECT password, username, memberID FROM members WHERE username = :username AND active="Yes" ');
 			$stmt->execute(array('username' => $username));
+
+
+
 
 			return $stmt->fetch();
 
