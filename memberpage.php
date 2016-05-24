@@ -6,9 +6,9 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 echo "checkechkechke";
 
 
-if(isset($_POST['submitvideo'])){
+if(isset($_POST['submit'])){
 
-	echo "checkechkechke";
+	echo "checkooooo";
 
 	try{
 
@@ -28,6 +28,8 @@ if(isset($_POST['submitvideo'])){
 
 	
 
+	}else{
+		echo "check"
 	}
 
 //define page title
@@ -174,7 +176,7 @@ require('layout/header.php');
       <div class="col-xs-4">
 
 
-        <input type="submit" name="submitvideo" value="Save it" class="btn btn-danger btn-color">
+        <input type="submit" name="submit" value="Save it" class="btn btn-danger btn-color">
       </div>
       <br><br><br><br>
       </div>
