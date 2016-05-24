@@ -102,7 +102,8 @@ $title = 'Demo';
 require('layout/header.php');
 ?>
 
-
+ </head>
+  <body>
 <div class="container">
 
 	<div class="row">
