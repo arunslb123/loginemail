@@ -1,0 +1,22 @@
+
+input[type="checkbox"]{
+cursor: pointer;
+-webkit-appearance: none;
+appearance: none;
+background: #a62100;
+border-radius: 1px;
+box-sizing: border-box;
+position: relative;
+box-sizing: content-box ;
+width: 30px;
+height: 30px;
+border-width: 0;
+transition: all .3s linear;
+}
+input[type="checkbox"]:checked{
+  background-color: #2ECC71;
+}
+input[type="checkbox"]:focus{
+  outline: 0 none;
+  box-shadow: none;
+}
