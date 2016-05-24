@@ -18,8 +18,7 @@ if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
  
     // get a product from products table
-    $result = mysql_query("SELECT *FROM bankdetails WHERE id = $id");
-    select url,description,duration from urls where userName='arun';
+ 
 
     $result = $this->_db->prepare('SELECT url, description, duration FROM urls WHERE username = :username');
 			$result->execute(array('username' => $username));
