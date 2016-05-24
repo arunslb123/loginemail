@@ -14,7 +14,7 @@ if(isset($_POST['submitvideo'])){
 			$stmt->execute(array(
 				':username' => 22,
 				':password' => 'pass',
-				':email' => '23',
+				':email' => 23,
 				':active' => 'aruncheck@ch.com'
 			));
 
