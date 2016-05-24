@@ -12,8 +12,8 @@ define('DBPASS','431dfc7a');
 define('DBNAME','acsm_4729051611eebc5');
 
 //application address
-define('DIR','http://aruncheck.azurewebsites.net/');
-define('SITEEMAIL','arunslb123@gmail.com');
+define('DIR','https://aruncheck.azurewebsites.net/');
+define('SITEEMAIL','yousaveteam@gmail.com');
 
 try {
 
