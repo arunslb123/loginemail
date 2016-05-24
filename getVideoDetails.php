@@ -9,17 +9,20 @@
 $response = array();
  
 // include db connect class
-require_once 'db_connect.php';
+require('includes/config.php');
  
-// connecting to db
-$db = new DB_CONNECT();
+
  
 // check for post data
-if (isset($_GET["id"])) {
-    $pid = $_GET['id'];
+if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
  
     // get a product from products table
     $result = mysql_query("SELECT *FROM bankdetails WHERE id = $id");
+    select url,description,duration from urls where userName='arun';
+
+    $result = $this->_db->prepare('SELECT url, description, duration FROM urls WHERE username = :username AND active="Yes" ');
+			$result->execute(array('username' => $username));
  
     if (!empty($result)) {
         // check for empty result
@@ -27,18 +30,18 @@ if (isset($_GET["id"])) {
  
             $result = mysql_fetch_array($result);
  
-            $bankdetails= array();
-            $bankdetails["id"] = $result["id"];
-            $bankdetails["name"] = $result["name"];
-            $bankdetails["amount"] = $result["amount"];
+            $urldetails= array();
+            $urldetails["url"] = $result["url"];
+            $urldetails["description"] = $result["description"];
+            $urldetails["duration"] = $result["duration"];
             
             // success
             $response["success"] = 1;
  
             // user node
-            $response["bankdetails"] = array();
+            $response["urldetails"] = array();
  
-            array_push($response["bankdetails"], $bankdetails);
+            array_push($response["urldetails"], $urldetails);
  
             // echoing JSON response
             echo json_encode($response);
