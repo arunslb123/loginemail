@@ -8,13 +8,23 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 
 if(isset($_POST['submitvideo'])){
 
-	$stmt = $db->prepare('INSERT INTO members (username,password,email,active) VALUES (:username, :password, :email, :active)');
+	try{
+
+		$stmt = $db->prepare('INSERT INTO members (username,password,email,active) VALUES (:username, :password, :email, :active)');
 			$stmt->execute(array(
 				':username' => 'check',
 				':password' => 'pass',
 				':email' => 'arun@check.com',
 				':active' => 'Yes'
 			));
+
+
+	
+		} catch(PDOException $e) {
+		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
+		}
+
+	
 
 	}
 
