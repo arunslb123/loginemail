@@ -10,12 +10,15 @@ $response = array();
  
 // include db connect class
 require('includes/config.php');
+
+echo "in file";
  
 
  
 // check for post data
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
+    echo "check";
  
     // get a product from products table
  
@@ -53,6 +56,7 @@ if (isset($_SESSION['username'])) {
             echo json_encode($response);
         }
     } else {
+    	echo "line 59 else";
         // no product found
         $response["success"] = 0;
         $response["message"] = "No Datafound";
@@ -62,6 +66,8 @@ if (isset($_SESSION['username'])) {
     }
 } else {
     // required field is missing
+
+    echo "line 70 else";
     $response["success"] = 0;
     $response["message"] = "Required field(s) is missing";
  
