@@ -42,7 +42,7 @@ try{
 		//$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 			echo "after result";
-
+$outp = "[";
 
 				while($rs = $stmt->fetch(PDO::FETCH_ASSOC)) {
     if ($outp != "[") {$outp .= ",";}
@@ -52,6 +52,7 @@ try{
 }
 $outp .="]";
 
+echo $outp;
 
 }
 
@@ -60,6 +61,6 @@ $outp .="]";
 		}
  
 
-    echo $outp;
+   
 
 ?>
