@@ -1,6 +1,6 @@
 <?php
- header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json; charset=UTF-8");
+//  header("Access-Control-Allow-Origin: *");
+// header("Content-Type: application/json; charset=UTF-8");
 /*
  * Following code will get single product details
  * A product is identified by product id (pid)
@@ -27,8 +27,8 @@ if (isset($_SESSION['username'])) {
 try{
 
 
-    $result = db->prepare('SELECT url, description, duration FROM urls WHERE userName = :username');
-			$result->execute(array('username' => $username));
+    $result = db->prepare('SELECT url, description, duration FROM urls WHERE userName = 'arun'');
+			//$result->execute(array('username' => $username));
 			$row = $result->fetch(PDO::FETCH_ASSOC);
 
 
