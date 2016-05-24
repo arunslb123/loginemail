@@ -15,15 +15,15 @@ class User extends Password{
 		try {
 
 
-				$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
-			$stmt->execute(array(
+				$stmt2 = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
+			$stmt2->execute(array(
 				':password' => 'pass',
 				':email' => 23,
 				':active' => 'aruncheck@ch.com'
 			));
 
 
-			
+
 			$stmt = $this->_db->prepare('SELECT password, username, memberID FROM members WHERE username = :username AND active="Yes" ');
 			$stmt->execute(array('username' => $username));
 
