@@ -1,6 +1,6 @@
 <?php
-//  header("Access-Control-Allow-Origin: *");
-// header("Content-Type: application/json; charset=UTF-8");
+ header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
 /*
  * Following code will get single product details
  * A product is identified by product id (pid)
@@ -59,8 +59,5 @@ echo $outp;
 			catch(PDOException $e) {
 		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
 		}
- 
-
-   
-
+	}
 ?>
