@@ -38,6 +38,7 @@ try{
 
 			$stmt = $db->prepare("SELECT url,description,duration FROM urls WHERE userName = :username");
 		   $stmt->execute(array(':username' => 'arun'));
+		   $stmt->fetch();
 		echo $stmt;
 		//$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
