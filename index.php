@@ -76,7 +76,7 @@ if(isset($_POST['submit'])){
 			<p>Regards Site Admin</p>";
 
 			$mail = new Mail();
-			$mail->setFrom(SITEEMAIL);
+			$mail->setFrom('noreply@yousave.org');
 			$mail->addAddress($to);
 			$mail->subject($subject);
 			$mail->body($body);
