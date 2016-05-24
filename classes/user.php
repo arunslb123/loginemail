@@ -1,6 +1,5 @@
 <?php
 include('password.php');
-require('includes/config.php');
 
 class User extends Password{
 
@@ -15,10 +14,6 @@ class User extends Password{
 	private function get_user_hash($username){
 
 		try {
-
-
-
-
 
 			$stmt = $this->_db->prepare('SELECT password, username, memberID FROM members WHERE username = :username AND active="Yes" ');
 			$stmt->execute(array('username' => $username));
