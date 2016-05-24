@@ -13,7 +13,7 @@ define('DBNAME','acsm_4729051611eebc5');
 
 //application address
 define('DIR','https://aruncheck.azurewebsites.net/');
-define('SITEEMAIL','yousaveteam@gmail.com');
+define('SITEEMAIL','noreply@yousave.org');
 
 try {
 

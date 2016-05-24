@@ -64,7 +64,7 @@ if(isset($_POST['submit'])){
 				':username' => $_POST['username'],
 				':password' => $hashedpassword,
 				':email' => $_POST['email'],
-				':active' =>'Yes'
+				':active' => 'Yes'
 			));
 			$id = $db->lastInsertId('memberID');
 
