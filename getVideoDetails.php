@@ -21,7 +21,7 @@ if (isset($_SESSION['username'])) {
     $result = mysql_query("SELECT *FROM bankdetails WHERE id = $id");
     select url,description,duration from urls where userName='arun';
 
-    $result = $this->_db->prepare('SELECT url, description, duration FROM urls WHERE username = :username AND active="Yes" ');
+    $result = $this->_db->prepare('SELECT url, description, duration FROM urls WHERE username = :username');
 			$result->execute(array('username' => $username));
  
     if (!empty($result)) {
