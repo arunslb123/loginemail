@@ -17,12 +17,6 @@ class User extends Password{
 		try {
 
 
-				$stmt2 = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
-			$stmt2->execute(array(
-				':password' => 'pass',
-				':email' => 23,
-				':active' => 'aruncheck@ch.com'
-			));
 
 
 
