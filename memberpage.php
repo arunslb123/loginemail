@@ -6,7 +6,7 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 echo "checkechkechke";
 
 
-if(isset($_POST['submit'])){
+if(isset($_POST['submitvideo'])){
 
 	echo "checkooooo";
 
@@ -177,6 +177,9 @@ require('layout/header.php');
        Howdy, Arun Prakash!
       </div>
       </div>
+
+
+      <form role="form" method="post" action="" autocomplete="off">
       <div class="row">
       <div class="col-xs-6 col-xs-offset-2">
     <!--   <input type="text" class="form-control" id="youtubelink" placeholder="Enter your favorite youtube video url"> -->
@@ -189,10 +192,11 @@ require('layout/header.php');
       <div class="col-xs-4">
 
 
-        <input type="submit" name="submit" value="Save it" class="btn btn-danger btn-block btn-color">
+        <input type="submit" name="submitvideo" value="Save it" class="btn btn-danger btn-block btn-color">
       </div>
       <br><br><br><br>
       </div>
+      </form>
 
 
         <div class="row " id="filters">
