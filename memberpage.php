@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 
 	try{
 
-		$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
+		$stmt = $db->prepare('INERT INTO users (name,age,email) VALUES (:password, :email, :active)');
 			$stmt->execute(array(
 				':password' => 'pass',
 				':email' => 29,
@@ -175,7 +175,7 @@ require('layout/header.php');
       <div class="col-xs-4">
 
 
-        <input type="submit" name="submit" value="Save it" class="btn btn-danger btn-color">
+        <input type="submit" name="submit" value="Save it" class="btn btn-danger btn-block btn-color">
       </div>
       <br><br><br><br>
       </div>
