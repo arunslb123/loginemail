@@ -3,6 +3,21 @@
 //if not logged in redirect to login page
 if(!$user->is_logged_in()){ header('Location: login.php'); } 
 
+
+
+
+if(isset($_POST['submitvideo'])){
+
+	$stmt = $db->prepare('INSERT INTO members (username,password,email,active) VALUES (:username, :password, :email, :active)');
+			$stmt->execute(array(
+				':username' => 'check',
+				':password' => 'pass',
+				':email' => 'arun@check.com',
+				':active' => 'Yes'
+			));
+
+	}
+
 //define page title
 $title = 'Members Page';
 
@@ -139,7 +154,7 @@ require('layout/header.php');
       <div class="col-xs-6 col-xs-offset-2">
     <!--   <input type="text" class="form-control" id="youtubelink" placeholder="Enter your favorite youtube video url"> -->
 
-      <input type="text" name="youtubelink" id="youtubelink" class="form-control input-lg" placeholder="Enter your favorite youtube video url" >
+    <input type="text" name="youtubelink" id="youtubelink" class="form-control" placeholder="Enter your favorite youtube video url" >
 
 
 
