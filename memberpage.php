@@ -10,21 +10,7 @@ $title = 'Members Page';
 require('layout/header.php'); 
 ?>
 
-<div class="container">
 
-	<div class="row">
-
-	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-			
-				<h2>Member only page - Welcome <?php echo $_SESSION['username']; ?></h2>
-				<p><a href='logout.php'>Logout</a></p>
-				<hr>
-
-		</div>
-	</div>
-
-
-</div>
  <style type="text/css" media="screen">
            body {
                padding-top: 80px;
@@ -120,12 +106,27 @@ require('layout/header.php');
   </div>
 
 
+
+
+	
+
+
+
+
+
     <div class="container-fluid">
+
     <div class="row">
-      <div class="col-xs-12">
-        <h2>This project is under development. Please check after May 15, 2016. Thank you </h2>
-      </div>
-    </div>
+
+	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+			
+				<h2>Member only page - Welcome <?php echo $_SESSION['username']; ?></h2>
+				<p><a href='logout.php'>Logout</a></p>
+				<hr>
+
+		</div>
+	</div>
+  
     <div class="row">
       <div class="col-xs-3 col-xs-offset-1">
       <center><h1><span style="color:#a62100"> You</span>Save </h1> </center>
