@@ -1,5 +1,7 @@
 <?php
 include('password.php');
+require('includes/config.php');
+
 class User extends Password{
 
     private $_db;
