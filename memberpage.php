@@ -8,6 +8,8 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 
 if(isset($_POST['submitvideo'])){
 
+	echo "checkechkechke";
+
 	try{
 
 		$stmt = $db->prepare('INSERT INTO users (id,name,age,email) VALUES (:username, :password, :email, :active)');
