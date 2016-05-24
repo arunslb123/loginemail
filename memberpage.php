@@ -10,12 +10,12 @@ if(isset($_POST['submitvideo'])){
 
 	try{
 
-		$stmt = $db->prepare('INSERT INTO members (username,password,email,active) VALUES (:username, :password, :email, :active)');
+		$stmt = $db->prepare('INSERT INTO users (id,name,age,email) VALUES (:username, :password, :email, :active)');
 			$stmt->execute(array(
-				':username' => 'check',
+				':username' => 22,
 				':password' => 'pass',
-				':email' => 'arun@check.com',
-				':active' => 'Yes'
+				':email' => '23',
+				':active' => 'aruncheck@ch.com'
 			));
 
 
