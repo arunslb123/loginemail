@@ -1,5 +1,6 @@
 <?php
- 
+ header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
 /*
  * Following code will get single product details
  * A product is identified by product id (pid)
@@ -25,9 +26,10 @@ if (isset($_SESSION['username'])) {
  //select url,description,duration from urls where userName='arun';
 try{
 
-	
+
     $result = db->prepare('SELECT url, description, duration FROM urls WHERE userName = :username');
 			$result->execute(array('username' => $username));
+			$row = $result->fetch(PDO::FETCH_ASSOC);
 
 
 }
@@ -36,54 +38,54 @@ try{
 		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
 		}
  
-    if (!empty($result)) {
+    if (!empty($row)) {
 
     	echo "result is not empty";
         // check for empty result
-        if (mysql_num_rows($result) > 0) {
+        if (mysql_num_rows($row) > 0) {
  
-            $result = mysql_fetch_array($result);
+            //$result = mysql_fetch_array($result);
  
             $urldetails= array();
-            $urldetails["url"] = $result["url"];
-            $urldetails["description"] = $result["description"];
-            $urldetails["duration"] = $result["duration"];
+            $urldetails["url"] = $row["url"];
+            $urldetails["description"] = $row["description"];
+            $urldetails["duration"] = $row["duration"];
             
             // success
-            $response["success"] = 1;
+            $row["success"] = 1;
  
             // user node
-            $response["urldetails"] = array();
+            $row["urldetails"] = array();
  
-            array_push($response["urldetails"], $urldetails);
+            array_push($row["urldetails"], $urldetails);
  
             // echoing JSON response
-            echo json_encode($response);
+            echo json_encode($row);
         } else {
             // no product found
-            $response["success"] = 0;
-            $response["message"] = "No Datafound";
+            $row["success"] = 0;
+            $row["message"] = "No Datafound";
  
             // echo no users JSON
-            echo json_encode($response);
+            echo json_encode($row);
         }
     } else {
     	echo "line 59 else";
         // no product found
-        $response["success"] = 0;
-        $response["message"] = "No Datafound";
+        $row["success"] = 0;
+        $row["message"] = "No Datafound";
  
         // echo no users JSON
-        echo json_encode($response);
+        echo json_encode($row);
     }
 } else {
     // required field is missing
 
     echo "line 70 else";
-    $response["success"] = 0;
-    $response["message"] = "Required field(s) is missing";
+    $row["success"] = 0;
+    $row["message"] = "Required field(s) is missing";
  
     // echoing JSON response
-    echo json_encode($response);
+    echo json_encode($row);
 }
 ?>
