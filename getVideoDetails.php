@@ -29,8 +29,8 @@ if (isset($_SESSION['username'])) {
 try{
 
 
-    $result = $db->prepare('SELECT url, description, duration FROM urls');
-			//$result->execute(array('username' => $username));
+    $result = $db->prepare('SELECT url, description, duration FROM urls where userName = :username');
+			$result->execute(array('username' => $username));
 			$row = $result->fetch(PDO::FETCH_ASSOC);
 
 
