@@ -5,12 +5,12 @@ class Mail extends PhpMailer
     // Set default variables for all new objects
     public $From     = 'noreply@yousave.org';
     public $FromName = SITETITLE;
-    public $Host     = 'smtp.gmail.com';
-    public $Mailer   = 'smtp';
-    public $SMTPAuth = true;
-    public $Username = 'yousaveteams';
-    public $Password = 'Yousave123@';
-    public $SMTPSecure = 'tls';
+    // public $Host     = 'smtp.gmail.com';
+    // public $Mailer   = 'smtp';
+    // public $SMTPAuth = true;
+    // public $Username = 'yousaveteams';
+    // public $Password = 'Yousave123@';
+    // public $SMTPSecure = 'tls';
     public $WordWrap = 75;
 
     public function subject($subject)
