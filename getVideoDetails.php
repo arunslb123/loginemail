@@ -22,9 +22,9 @@ if (isset($_SESSION['username'])) {
     echo $username;
  
     // get a product from products table
- 
+ select url,description,duration from urls where userName='arun';
 
-    $result = $this->_db->prepare('SELECT url, description, duration FROM urls WHERE userName = :username');
+    $result = db->prepare('SELECT url, description, duration FROM urls WHERE userName = :username');
 			$result->execute(array('username' => $username));
  
     if (!empty($result)) {
