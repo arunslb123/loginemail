@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 	
 
 	}else{
-		echo "check"
+		echo "check";
 	}
 
 //define page title
