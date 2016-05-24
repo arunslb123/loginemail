@@ -30,7 +30,7 @@ try{
 
 
 
-
+echo "before result";
 
    //  $result = $db->prepare('SELECT url, description, duration FROM urls where userName = :username');
 			// $result->execute(array('username' => $username));
@@ -38,8 +38,8 @@ try{
 
 			$stmt = $db->prepare("SELECT url,description,duration FROM urls WHERE userName = :username");
 		   $stmt->execute(array(':username' => 'arun'));
-		   $stmt->fetch();
-		echo $stmt;
+		   //$stmt->fetch();
+		//echo $stmt;
 		//$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 			echo "after result";
