@@ -32,14 +32,19 @@ try{
 
 
 
-    $result = $db->prepare('SELECT url, description, duration FROM urls where userName = :username');
-			$result->execute(array('username' => $username));
+   //  $result = $db->prepare('SELECT url, description, duration FROM urls where userName = :username');
+			// $result->execute(array('username' => $username));
 			//$row = $result->fetch(PDO::FETCH_ASSOC);
+
+			$stmt = $db->prepare('SELECT url,description,duration FROM urls WHERE userName = :username');
+		$stmt->execute(array(':username' => $username));
+		echo $stmt;
+		//$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 			echo "after result";
 
 
-				while($rs = $result->fetch(PDO::FETCH_ASSOC)) {
+				while($rs = $stmt->fetch(PDO::FETCH_ASSOC)) {
     if ($outp != "[") {$outp .= ",";}
     $outp .= '{"title":"'  . $rs["description"] . '",';
     $outp .= '"url":"'   . $rs["url"]        . '",';
