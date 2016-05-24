@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
 		$error[] = 'Username is too short.';
 	} else {
 		$stmt = $db->prepare('SELECT username FROM members WHERE username = :username');
-		$stmt->execute(array(':username' => $_POST['username']));
+		//$stmt->execute(array(':username' => $_POST['username']));
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 		if(!empty($row['username'])){
@@ -69,7 +69,7 @@ if(isset($_POST['submit'])){
 
 
 
-			
+
 
 
 
