@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 
 	try{
 
-		$stmt = $db->prepare('INERT INTO users (name,age,email) VALUES (:password, :email, :active)');
+		$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
 			$stmt->execute(array(
 				':password' => 'pass',
 				':email' => 29,
@@ -28,7 +28,21 @@ if(isset($_POST['submit'])){
 	
 
 	}else{
-		echo "check";
+		try{
+
+		$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
+			$stmt->execute(array(
+				':password' => 'pass',
+				':email' => 29,
+				':active' => 'aruncheck@ch.com'
+			));
+
+
+	
+		} catch(PDOException $e) {
+		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
+		}
+
 	}
 
 //define page title
