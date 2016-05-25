@@ -75,7 +75,7 @@ require('layout/header.php');
 
  <style type="text/css" media="screen">
            body {
-               padding-top: 80px;
+               padding-top: 10px;
            }
            #trailer .modal-dialog {
                margin-top: 200px;
@@ -182,7 +182,7 @@ require('layout/header.php');
 
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			
-				<h4>Welcome <?php echo $_SESSION['username']; ?></h4>
+				<text-right><h4>Howdy, <?php echo $_SESSION['username']; ?></h4></text-right>
 				<text-right><p><a href='logout.php'>Logout</a></p></text-right>
 				<hr>
 
@@ -193,9 +193,7 @@ require('layout/header.php');
       <div class="col-xs-3 col-xs-offset-1">
       <center><h1><span style="color:#a62100"> You</span>Save </h1> </center>
       </div>
-      <div class="col-xs-6 text-right">
-       Howdy, Arun Prakash!
-      </div>
+      
       </div>
 
 
