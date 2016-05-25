@@ -32,7 +32,12 @@ require('layout/header.php');
 	
 <div class="container">
 
+  <div class="login-page">
+
 	<div class="row">
+
+	 <center><h1><span style="color:#a62100"> You</span>Save </h1> </center>
+      <center> <h3>The best place to save your favorite youtube videos!</h3> </center>
 
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			<form role="form" method="post" action="" autocomplete="off">
