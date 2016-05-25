@@ -59,7 +59,8 @@ $(document).ready(function () {
 
     $.ajax({
             type: 'GET',
-            url: 'https://script.google.com/macros/s/AKfycbwTQEEWxi6g2Z7W6KgqiM9hd7hl2MHnQ_OVjjidLh3jYLpU-qM/exec',
+            //url: 'https://script.google.com/macros/s/AKfycbwTQEEWxi6g2Z7W6KgqiM9hd7hl2MHnQ_OVjjidLh3jYLpU-qM/exec',
+            url:'https://aruncheck.azurewebsites.net/getVideoDetails.php',
             dataType: 'json',
             success: function(data){
                // var jsondata = $.parseJSON(data);
