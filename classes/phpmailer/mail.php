@@ -8,7 +8,7 @@ class Mail extends PhpMailer
     public $Host     = 'smtp.mail.yahoo.com';
     public $Mailer   = 'smtp';
     public $SMTPAuth = true;
-    public $Username = 'yousavevideo';
+    public $Username = 'yousavevideo@yahoo.com';
     public $Password = 'prakash123';
     public $SMTPSecure = 'tls';
     public $WordWrap = 75;
