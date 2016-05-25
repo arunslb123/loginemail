@@ -54,7 +54,7 @@ $outputString = "[";
 }
 $outputString .="]";
 
-echo $outputString;
+echo '{"songjson":'. $outputString .'}';
 
 }
 
