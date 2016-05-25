@@ -3,7 +3,7 @@
 //if not logged in redirect to login page
 if(!$user->is_logged_in()){ header('Location: login.php'); } 
 
-echo "checkechkechke";
+
 
 
 if(isset($_POST['submitvideo'])){
@@ -182,8 +182,8 @@ require('layout/header.php');
 
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			
-				<h2>Member only page - Welcome <?php echo $_SESSION['username']; ?></h2>
-				<p><a href='logout.php'>Logout</a></p>
+				<h4>Welcome <?php echo $_SESSION['username']; ?></h4>
+				<text-right><p><a href='logout.php'>Logout</a></p></text-right>
 				<hr>
 
 		</div>
