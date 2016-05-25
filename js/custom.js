@@ -83,7 +83,7 @@ $(document).ready(function () {
 
                    }
 
-                   if(data.songjson[i].time>=5 && data.songjson[i].time<=10){
+                   if(data.songjson[i].time>5 && data.songjson[i].time<=10){
 
                                       $("#displayvideo").append(
                         '<div class="col-md-6 col-lg-4 movie-tile text-center col-centered bgvideo second" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
@@ -95,7 +95,7 @@ $(document).ready(function () {
 
                    }
 
-                    if(data.songjson[i].time>=10 && data.songjson[i].time<=20){
+                    if(data.songjson[i].time>10 && data.songjson[i].time<=20){
 
 
                                       $("#displayvideo").append(
