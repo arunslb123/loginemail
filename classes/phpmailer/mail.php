@@ -12,7 +12,7 @@ class Mail extends PhpMailer
     public $Password = 'prakash123';
     public $SMTPSecure = 'tls';
     public $WordWrap = 75;
-    public $Port = 587;
+    public $Port = 465;
 
     public function subject($subject)
     {
