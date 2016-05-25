@@ -117,15 +117,17 @@ require('layout/header.php');
   <body>
 <div class="container">
 
-	<div class="row">
+	
 
 	    <div class="login-page">
 
+	    <div class="row">
+
 	    <center><h1><span style="color:#a62100"> You</span>Save </h1> </center>
-      <center> <h3>The best place to save your favorite youtube videos!</h3> </center>
+      <center> <h3><span style="color:white">The best place to save your favorite youtube videos!</span></h3> </center>
 			<form role="form" method="post" action="" autocomplete="off">
-				<center><h4>Please Sign Up </h4></center> 
-				<center><p>Already a member? <a href='login.php'>Login</a></p></center>
+				<center><h4><span style="color:white">Please Sign Up </span></h4></center> 
+				<center><p><span style="color:white">Already a member?</span> <a href='login.php'>Login</a></p></center>
 				<hr>
 
 				<?php
