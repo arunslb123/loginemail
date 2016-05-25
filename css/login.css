@@ -1,12 +1,16 @@
 
-@media screen and (min-device-width : 320px) 
-    and (-webkit-device-pixel-ratio: 3){
-      .login-page{
+@media only screen and (min-device-width: 480px){
+
+
+           .login-page{
         width: :90%;
         padding: 8% 0 0;
         margin: auto;
       }
-    }
+
+
+  
+}
 
 .login-page {
   width: 40%;
