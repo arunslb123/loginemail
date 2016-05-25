@@ -8,13 +8,25 @@ echo "checkechkechke";
 
 if(isset($_POST['submitvideo'])){
 
-	echo "checkooooo";
 
 	try{
 
 
 
-$videoid = $_POST['youtubelink'];
+$link = $_POST['youtubelink'];
+
+
+$videoid = explode("?v=", $link); // For videos like http://www.youtube.com/watch?v=...
+if (empty($videoid[1]))
+    $videoid = explode("/v/", $link); // For videos like http://www.youtube.com/watch/v/..
+
+$videoid = explode("&", $videoid[1]); // Deleting any other params
+$videoid = $videoid[0];
+
+
+
+
+
 $apikey = 'AIzaSyC_CL8D4U0BV3Ng5_rIdUZ6aoA0gfNggoI';
 
 $json = file_get_contents('https://www.googleapis.com/youtube/v3/videos?id='.$videoid.'&key='.$apikey.'&part=snippet');

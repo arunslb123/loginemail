@@ -1,5 +1,5 @@
 <?php
- header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 /*
  * Following code will get single product details
