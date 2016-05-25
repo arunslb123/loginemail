@@ -48,5 +48,4 @@ class Mail extends PhpMailer
 
 // $sendgrid->send($email);
 
-
 ?>
