@@ -39,16 +39,20 @@ echo $_SESSION['username'];
 $duration = $ytdata2->items[0]->contentDetails->duration;
 $interval = new DateInterval($duration);
 $durationsec = $interval->h * 3600 + $interval->i * 60 + $interval->s;
+$durationsec = $durationsec/60;
 
 
 // echo '<h1>Title: ' . $ytdata->items[0]->snippet->title . '</h1>';
 // echo 'Description: ' . $ytdata->items[0]->snippet->description;
+// INSERT into urls ('url','userName','description','duration','inserttime')values('BNeXlJW70KQ','arun','desc1',28,now());
 
-		$stmt = $db->prepare('INSERT INTO users (name,age,email) VALUES (:password, :email, :active)');
+
+		$stmt = $db->prepare('INSERT INTO urls (url,userName,description,duration,inserttime) VALUES (:url, :userName, :description, :duration, now())');
 			$stmt->execute(array(
-				':password' => $ytdata->items[0]->snippet->title,
-				':email' => $durationsec ,
-				':active' => 'aruncsheckff@ch.com'
+				':url' => $videoid,
+				':userName' => $_SESSION['username'] ,
+				':description' => $ytdata->items[0]->snippet->title,
+				':duration' => $durationsec
 			));
 
 
