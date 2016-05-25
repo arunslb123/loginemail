@@ -259,3 +259,11 @@ p {
 	width: 100%;
 	height: 20px;
 }
+
+
+
+
+.div-with-bg
+{
+    background: color url('path') others;
+}
