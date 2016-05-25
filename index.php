@@ -124,8 +124,8 @@ require('layout/header.php');
 	    <center><h1><span style="color:#a62100"> You</span>Save </h1> </center>
       <center> <h3>The best place to save your favorite youtube videos!</h3> </center>
 			<form role="form" method="post" action="" autocomplete="off">
-				<h2>Please Sign Up</h2>
-				<p>Already a member? <a href='login.php'>Login</a></p>
+				<center><h4>Please Sign Up </h4></center> 
+				<center><p>Already a member? <a href='login.php'>Login</a></p></center>
 				<hr>
 
 				<?php
