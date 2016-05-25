@@ -107,7 +107,7 @@ if(isset($_POST['submit'])){
 }
 
 //define page title
-$title = 'Demo';
+$title = 'YouSave';
 
 //include header template
 require('layout/header.php');
