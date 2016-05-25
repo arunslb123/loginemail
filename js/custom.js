@@ -277,3 +277,7 @@ $(document).ready(function () {
 $( "#filters" ).click(function() {
   excc();
 });
+
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});

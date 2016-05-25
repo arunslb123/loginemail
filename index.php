@@ -115,9 +115,9 @@ require('layout/header.php');
 
  </head>
   <body>
-<div class="container">
+<div class="container-fluid">
 
-	<div class="row">
+	<div class="row-fluid">
 
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			<form role="form" method="post" action="" autocomplete="off">
@@ -145,7 +145,7 @@ require('layout/header.php');
 				<div class="form-group">
 					<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" value="<?php if(isset($error)){ echo $_POST['email']; } ?>" tabindex="2">
 				</div>
-				<div class="row">
+				<div class="row-fluid">
 					<div class="col-xs-6 col-sm-6 col-md-6">
 						<div class="form-group">
 							<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="3">
@@ -158,7 +158,7 @@ require('layout/header.php');
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row-fluid">
 					<div class="col-xs-6 col-md-6"><input type="submit" name="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
 				</div>
 			</form>
