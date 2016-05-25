@@ -52,9 +52,9 @@ $outputString = "[";
     $outputString .= '"url":"'   . $rs["url"]        . '",';
     $outputString .= '"time":"'. $rs["duration"]     . '"}'; 
 }
-$outp .="]";
+$outputString .="]";
 
-echo $outp;
+echo $outputString;
 
 }
 
