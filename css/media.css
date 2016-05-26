@@ -1,4 +1,4 @@
-@media only screen and (min-width: 414px) and (max-width: 736px)
+@media all and (min-device-width: 414px) and (max-device-width: 736px)
  { 
 
      .login-page{
@@ -10,7 +10,7 @@
 }
 
 
-@media only screen and (min-width: 735px) and (max-width: 1020px)
+@media all and (min-device-width: 735px) and (max-device-width: 1020px)
  { 
 
      .login-page{
@@ -19,4 +19,33 @@
     margin: auto;
   }  
 
+}
+
+
+
+@media screen 
+    and (min-device-width : 1080px) 
+    and (max-device-width : 1920px) 
+    and (min-resolution: 401dpi) 
+    and (device-aspect-ratio:16/9) 
+{ 
+	     .login-page{
+    width: 80%;
+    padding: 8% 0 0 !important;
+    margin: auto;
+  } 
+
+}
+
+@media screen 
+    and (min-device-width : 750px) 
+    and (max-device-width : 1334px) 
+    and (min-resolution: 326dpi) 
+{ 
+
+     .login-page{
+    width: 80%;
+    padding: 8% 0 0 !important;
+    margin: auto;
+  } 
 }
