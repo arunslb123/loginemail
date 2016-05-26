@@ -41,7 +41,7 @@ require('layout/header.php');
 
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			<form role="form" method="post" action="" autocomplete="off">
-				<h2><span style="color:white">Please Login</span></h2>
+				<h4><span style="color:white">Please Login</span></h4>
 				<p><a href='./'>Back to home page</a></p>
 				<hr>
 
