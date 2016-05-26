@@ -110,10 +110,10 @@ background: linear-gradient(to left, #159957, #155799);*/
 /*
   background: -o-linear-gradient(right, #136a8a, #267871);*/
 
- background: -webkit-linear-gradient(right, #159957, #155799); 
-  background: -moz-linear-gradient(right, #159957, #155799);
-  background: -o-linear-gradient(right, #159957, #155799);
-  background: linear-gradient(to left, #159957, #155799);
+ background: -webkit-linear-gradient(right, #239F85, #155799); 
+  background: -moz-linear-gradient(right, #239F85, #155799);
+  background: -o-linear-gradient(right, #239F85, #155799);
+  background: linear-gradient(to left, #239F85, #155799);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   font-family: 'Raleway', sans-serif;
