@@ -58,7 +58,7 @@ if($descriptionlength>15){
 			$stmt->execute(array(
 				':url' => $videoid,
 				':userName' => $_SESSION['username'] ,
-				':description' => $description,
+				':description' => $description."...",
 				':duration' => $durationsec
 			));
 
