@@ -1,11 +1,13 @@
 
-
-@media only screen and (min-device-width: 480px){
-
-	 .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
         margin-left: 25%;
     }
 }
+
+
+
+
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
 body{
 	font-family: 'Raleway', sans-serif;
