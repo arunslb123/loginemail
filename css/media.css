@@ -23,11 +23,7 @@
 
 
 
-@media screen 
-    and (min-device-width : 1080px) 
-    and (max-device-width : 1920px) 
-    and (min-resolution: 401dpi) 
-    and (device-aspect-ratio:16/9) 
+@media screen and (min-device-width : 1080px) and (max-device-width : 1920px) and (min-resolution: 401dpi) and (device-aspect-ratio:16/9) 
 { 
 	     .login-page{
     width: 80%;
@@ -37,10 +33,7 @@
 
 }
 
-@media screen 
-    and (min-device-width : 750px) 
-    and (max-device-width : 1334px) 
-    and (min-resolution: 326dpi) 
+@media screen and (min-device-width : 750px) and (max-device-width : 1334px) and (min-resolution: 326dpi) 
 { 
 
      .login-page{
