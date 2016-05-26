@@ -14,8 +14,8 @@ a {
   and (-webkit-min-device-pixel-ratio: 3) { 
 
          .login-page{
-        width: :80%;
-        padding: 8% 0 0;
+        width: :80% !important;;
+        padding: 8% 0 0 !important;;
         margin: auto;
       }  
 
@@ -23,6 +23,6 @@ a {
 
 @media only screen and (max-width: 500px) {
     body {
-        background-color: lightblue;
+        background-color: lightblue !important;;
     }
 }
