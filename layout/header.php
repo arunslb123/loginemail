@@ -20,5 +20,5 @@
         <link rel="stylesheet" type="text/css" href="css/login.css">
 
          <link rel="stylesheet" href="style/main.css">
-         <link rel="stylesheet" media="(max-width: 713px)" href="css/media.css" />
+         <link rel="stylesheet" href="css/media.css" />
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
