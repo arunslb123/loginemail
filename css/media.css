@@ -1,14 +1,13 @@
-@media all and (min-device-width: 414px) and (max-device-width: 736px) 
+@media only screen and (min-width: 414px) and (max-width: 736px)
  { 
 
-         .login-page{
-        width: :80% !important;;
-        padding: 8% 0 0 !important;;
-        margin: auto;
-      }  
+     .login-page{
+    width: :80% !important;;
+    padding: 8% 0 0 !important;;
+    margin: auto;
+  }  
 
-      body{
-        background-color: red;
-      }
-
+  body{
+    background-color: red;
+  }
 }
