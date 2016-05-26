@@ -41,6 +41,13 @@ $interval = new DateInterval($duration);
 $durationsec = $interval->h * 3600 + $interval->i * 60 + $interval->s;
 $durationsec = $durationsec/60;
 
+$description = $ytdata->items[0]->snippet->title;
+
+$descriptionlength = strlen($description);
+
+if($descriptionlength>15){
+  $description = substr($description, 0, 15);
+}
 
 // echo '<h1>Title: ' . $ytdata->items[0]->snippet->title . '</h1>';
 // echo 'Description: ' . $ytdata->items[0]->snippet->description;
@@ -51,7 +58,7 @@ $durationsec = $durationsec/60;
 			$stmt->execute(array(
 				':url' => $videoid,
 				':userName' => $_SESSION['username'] ,
-				':description' => $ytdata->items[0]->snippet->title,
+				':description' => $description,
 				':duration' => $durationsec
 			));
 
