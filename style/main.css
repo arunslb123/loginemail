@@ -3,7 +3,7 @@
 }
 
 a {
-	color: #7FB2B3;
+	color: #B6E4E0;
 	text-decoration: none;
 }
 
@@ -14,3 +14,7 @@ a {
 	font-size: 0;
 }
 
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #FFFF00;
+    color: #FFC0CB;
+}
