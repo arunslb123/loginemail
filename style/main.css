@@ -11,5 +11,6 @@ a {
 
 .logo{
 	font-family: 'Nunito', sans-serif;
+	white-space-collapsing:discard
 }
 
