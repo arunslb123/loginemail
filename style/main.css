@@ -15,8 +15,8 @@ a {
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: #DF5A73 !important ;
-    background-color: #F5A196 !important;
+    color: #188fff !important ;
+    background-color: ##188fff !important;
     border-color: #A34A50 !important; /*set the color you want here*/
 }
 
@@ -28,6 +28,6 @@ a {
 
 .btn-primary {
     color: #fff !important;
-    background-color: #F3958E !important;
+    background-color: #188fff !important;
     border-color: #2e6da4 !important;
 }
