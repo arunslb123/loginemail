@@ -129,5 +129,5 @@ background: linear-gradient(to left, #159957, #155799);*/
 }
 
 .displayvideo{
-  background-color: white;
+  background-color: white !important;
 }
