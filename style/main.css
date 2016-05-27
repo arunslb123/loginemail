@@ -24,3 +24,10 @@ a {
 .bg-danger {
     background-color: #8DC5C0 !important;
 }
+
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #F3958E !important;
+    border-color: #2e6da4 !important;
+}
