@@ -3,7 +3,7 @@
 }
 
 a {
-	color: #B6E4E0;
+	color: #188fff;
 	text-decoration: none;
 }
 
@@ -16,7 +16,7 @@ a {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     color: #188fff !important ;
-    background-color: ##188fff !important;
+    background-color: #188fff !important;
     border-color: #A34A50 !important; /*set the color you want here*/
 }
 
