@@ -164,7 +164,7 @@ require('layout/header.php');
 				</div>
 
 				<div class="row">
-					<div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3"><input type="submit" name="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
+					<div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3"><input type="submit" name="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
 				</div>
 			</form>
 		</div>
