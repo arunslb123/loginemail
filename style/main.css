@@ -18,3 +18,8 @@ a {
     background-color: #FFFF00;
     color: #FFC0CB;
 }
+
+
+.bg-danger {
+    background-color: #8DC5C0 !important;
+}
