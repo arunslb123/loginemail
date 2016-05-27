@@ -17,7 +17,7 @@ body{
 }
 
 .container-fluid{
-	background-color: #239F85;
+	
 	min-height: auto;
     height: auto;
     background-size:100% !important;
@@ -83,9 +83,9 @@ body{
 }
 
 
-.btn-color{
+/*.btn-color{
 	background-color: #a62100 !important;
-}
+}*/
 
 
 
