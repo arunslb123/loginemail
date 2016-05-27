@@ -123,7 +123,7 @@ require('layout/header.php');
 
 	    <div class="row">
 
-	    <center><h1><span style="color:#8DE6DC"> You</span> <span style="color:#8FC2F5"> Save </h1> </center>
+	    <div class="logo"><center><h1><span style="color:#8DE6DC"> You</span> <span style="color:#8FC2F5"> Save </h1> </center></span></div>
       <center> <h3><span style="color:white">The best place to save your favorite youtube videos!</span></h3> </center>
 			<form role="form" method="post" action="" autocomplete="off">
 				<center><h4><span style="color:white">Please Sign Up </span></h4></center> 
