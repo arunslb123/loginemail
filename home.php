@@ -198,7 +198,7 @@ require('layout/header.php');
   
     <div class="row">
       <div class="col-xs-3 col-xs-offset-1">
-      <center><h1><span style="color:#a62100"> You</span>Save </h1> </center>
+       <div class="logo"><center><h1><span style="color:#8DE6DC"> You</span> <span style="color:#8FC2F5">Save </h1> </center></span></div>
       </div>
       
       </div>
