@@ -33,7 +33,7 @@ $json = file_get_contents('https://www.googleapis.com/youtube/v3/videos?id='.$vi
 $json2 = file_get_contents('https://www.googleapis.com/youtube/v3/videos?id='.$videoid.'&key='.$apikey.'&part=contentDetails');
 $ytdata = json_decode($json);
 $ytdata2 =json_decode($json2);
-echo $_SESSION['username'];
+
 
 
 $duration = $ytdata2->items[0]->contentDetails->duration;
