@@ -70,12 +70,12 @@ require('layout/header.php');
 
 <div class="container">
 
-	<div class="row">
+	<div class="row login-page">
 
-	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+	    <!-- <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3"> -->
 			<form role="form" method="post" action="" autocomplete="off">
-				<h2>Reset Password</h2>
-				<p><a href='login.php'>Back to login page</a></p>
+				<center><h2>Reset Password</h2> </center>
+				<center><p><a href='login.php'>Back to login page</a></p> </center>
 				<hr>
 
 				<?php
@@ -106,10 +106,10 @@ require('layout/header.php');
 
 				<hr>
 				<div class="row">
-					<div class="col-xs-6 col-md-6"><input type="submit" name="submit" value="Sent Reset Link" class="btn btn-primary btn-block btn-lg" tabindex="2"></div>
+					<center><div class="col-xs-6 col-md-6 col-xs-offset-3 col-md-offset-3"><input type="submit" name="submit" value="Sent Reset Link" class="btn btn-primary btn-block btn-lg" tabindex="2"></div> </center>
 				</div>
 			</form>
-		</div>
+		<!-- </div> -->
 	</div>
 
 
