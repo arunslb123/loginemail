@@ -66,7 +66,7 @@ require('layout/header.php');
 
 <div class="container">
 
-  <div class="login-page"> 
+ <!--  <div class="login-page">  -->
 
 	<div class="row">
 
@@ -125,7 +125,7 @@ require('layout/header.php');
 		</div>
 	</div>
 
-	</div>
+	<!-- </div> -->
 
 
 </div>
