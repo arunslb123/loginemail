@@ -209,18 +209,18 @@ require('layout/header.php');
       <div class="row">
       <div class="col-xs-8 col-xs-offset-2 col-lg-5 col-lg-offset-2">
     <!--   <input type="text" class="form-control" id="youtubelink" placeholder="Enter your favorite youtube video url"> -->
-     <center>
+    
     <input type="text" name="youtubelink" id="youtubelink" class="form-control" placeholder="Enter your favorite youtube video url" >
-    </center>
+   
 
 
 
       </div>
       <div class="col-xs-2 col-lg-2">
 
-        <center>
+        
         <input type="submit" name="submitvideo" value="Save it" class="btn btn-danger btn-color">
-        </center>
+       
       </div>
       <br><br><br><br>
       </div>
