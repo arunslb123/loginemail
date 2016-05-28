@@ -104,7 +104,7 @@ require('layout/header.php');
 					<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" value="" tabindex="1">
 				</div>
 
-				<hr>
+				<br>
 				<div class="row">
 					<center><div class="col-xs-6 col-md-6 col-xs-offset-3 col-md-offset-3"><input type="submit" name="submit" value="Sent Reset Link" class="btn btn-primary btn-block btn-lg" tabindex="2"></div> </center>
 				</div>
