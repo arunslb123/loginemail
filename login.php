@@ -39,7 +39,7 @@ require('layout/header.php');
 	 <div class="logo"><center><h1><span style="color:#8DE6DC"> You</span> <span style="color:#8FC2F5">Save </h1> </center></span> </div>
       <center> <h3><span style="color:white">The best place to save your favorite youtube videos!</span></h3> </center>
 
-	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+	    <!-- <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3"> -->
 			<form role="form" method="post" action="" autocomplete="off">
 				<h4><span style="color:white">Please Login</span></h4>
 				<p><a href='./'>Back to home page</a></p>
@@ -92,7 +92,7 @@ require('layout/header.php');
 					<div class="col-xs-6 col-md-6"><input type="submit" name="submit" value="Login" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
 				</div>
 			</form>
-		</div>
+		<!-- </div> -->
 	</div>
 
 
