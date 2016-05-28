@@ -267,7 +267,7 @@ p {
 
 
 
-.div-with-bg
-{
-    background: color url('path') others;
+video {
+  width: 100%    !important;
+  height: auto   !important;
 }
