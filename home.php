@@ -187,12 +187,12 @@ require('layout/header.php');
 
     <div class="row">
 
-    <div class="col-xs-9 col-xs-offset-2">
+    <div class="col-xs-9 col-xs-offset-1">
     <h4>Howdy, <?php echo $_SESSION['username']; ?></h4>
     </div>
 
     <div class="col-xs-2">
-      <text-right><p><a href='logout.php'>Logout</a></p></text-right>
+      <p><a href='logout.php'>Logout</a></p>
     </div>
 
 	</div>
