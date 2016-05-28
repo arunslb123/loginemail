@@ -41,8 +41,8 @@ require('layout/header.php');
 
 	    <!-- <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3"> -->
 			<form role="form" method="post" action="" autocomplete="off">
-				<h4><span style="color:white">Please Login</span></h4>
-				<p><a href='./'>Back to home page</a></p>
+				<center> <h4><span style="color:white">Please Login</span></h4></center>
+				<center> <p><a href='./'>Back to home page</a></p></center>
 				<hr>
 
 				<?php
@@ -82,14 +82,14 @@ require('layout/header.php');
 				</div>
 				
 				<div class="row">
-					<div class="col-xs-9 col-sm-9 col-md-9">
-						 <a href='reset.php'>Forgot your Password?</a>
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						 <center> <a href='reset.php'>Forgot your Password?</a></center>
 					</div>
 				</div>
 				<br>
 				
 				<div class="row">
-					<div class="col-xs-6 col-md-6"><input type="submit" name="submit" value="Login" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
+					<div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3"><input type="submit" name="submit" value="Login" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
 				</div>
 			</form>
 		<!-- </div> -->
