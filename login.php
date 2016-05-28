@@ -42,7 +42,7 @@ require('layout/header.php');
 	    <!-- <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3"> -->
 			<form role="form" method="post" action="" autocomplete="off">
 				<center> <h4><span style="color:white">Please Login</span></h4></center>
-				<center> <p> Don't have an account? <a href='./'>Join now!</a></p></center>
+				<center> <p> <span style="color:white">Don't have an account?</span> <a href='./'>Join now!</a></p></center>
 				<hr>
 
 				<?php
