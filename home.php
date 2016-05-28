@@ -86,8 +86,8 @@ require('layout/header.php');
            }
            #trailer .modal-dialog {
                margin-top: 200px;
-               width: 480px;
-               height: 480px;
+               width: 1200px;
+               height: 980px;
            }
            .hanging-close {
                position: absolute;
