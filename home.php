@@ -205,18 +205,6 @@ require('layout/header.php');
       </div>
 
 
-      <div class="row">
-        <form action="search.php" method="get">
-        <input type="submit" name="search" value="Go" style="float: right" />
-          <div style="overflow: hidden; padding-right: .5em;">
-          <input type="text" name="term" style="width: 100%;" />
-         </div>
-        </form>
-
-
-      </div>
-
-
       <form role="form" method="post" action="" autocomplete="off">
       <div class="row">
       <div class="col-xs-8 col-xs-offset-2 col-lg-5 col-lg-offset-3">
