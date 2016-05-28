@@ -5,6 +5,8 @@
     width: 90%;
     padding: 8% 0 0 !important;
     margin: auto;
+
+   
   }  
 
    body {
@@ -17,6 +19,10 @@ input::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 2;
 }
+
+ .big-width{
+      width: 100%
+    }
 
 }
 
@@ -42,6 +48,10 @@ input::-webkit-input-placeholder {
     line-height: 2;
 }
 
+ .big-width{
+      width: 100%
+    }
+
 }
 
 
@@ -54,6 +64,10 @@ input::-webkit-input-placeholder {
     margin: auto;
   } 
 
+   .big-width{
+      width: 100%
+    }
+
 }
 
 @media screen and (min-width : 750px) and (max-width : 1334px) and (min-resolution: 326dpi) 
@@ -64,4 +78,8 @@ input::-webkit-input-placeholder {
     padding: 8% 0 0 !important;
     margin: auto;
   } 
+
+   .big-width{
+      width: 100%
+    }
 }
