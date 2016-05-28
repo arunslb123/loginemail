@@ -87,7 +87,6 @@ require('layout/header.php');
 					</div>
 				</div>
 				
-				<hr>
 				<div class="row">
 					<div class="col-xs-6 col-md-6"><input type="submit" name="submit" value="Login" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
 				</div>
