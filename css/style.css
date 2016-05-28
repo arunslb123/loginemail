@@ -267,7 +267,6 @@ p {
 
 
 
-video {
-  width: 100%    !important;
-  height: auto   !important;
+.bg-success {
+    background-color: #538AB5 !important;
 }
