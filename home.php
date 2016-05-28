@@ -207,7 +207,7 @@ require('layout/header.php');
 
       <form role="form" method="post" action="" autocomplete="off">
       <div class="row">
-      <div class="col-xs-6 col-xs-offset-2 big-width">
+      <div class="col-xs-9 col-lg-5 col-lg-offset-2 big-width">
     <!--   <input type="text" class="form-control" id="youtubelink" placeholder="Enter your favorite youtube video url"> -->
 
     <input type="text" name="youtubelink" id="youtubelink" class="form-control" placeholder="Enter your favorite youtube video url" >
@@ -215,7 +215,7 @@ require('layout/header.php');
 
 
       </div>
-      <div class="col-xs-4">
+      <div class="col-xs-2 col-lg-3">
 
 
         <input type="submit" name="submitvideo" value="Save it" class="btn btn-danger btn-color">
