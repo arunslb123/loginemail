@@ -13,58 +13,67 @@ if(isset($_POST['submitvideo'])){
 
 
 
+
+
+
 $link = $_POST['youtubelink'];
 
 
-$videoid = explode("?v=", $link); // For videos like http://www.youtube.com/watch?v=...
-if (empty($videoid[1]))
-    $videoid = explode("/v/", $link); // For videos like http://www.youtube.com/watch/v/..
 
-$videoid = explode("&", $videoid[1]); // Deleting any other params
-$videoid = $videoid[0];
+if (strpos($link, 'youtube') !== false) {
+    $videoid = explode("?v=", $link); // For videos like http://www.youtube.com/watch?v=...
+    if (empty($videoid[1]))
+        $videoid = explode("/v/", $link); // For videos like http://www.youtube.com/watch/v/..
 
-
-
-
-
-$apikey = 'AIzaSyC_CL8D4U0BV3Ng5_rIdUZ6aoA0gfNggoI';
-
-$json = file_get_contents('https://www.googleapis.com/youtube/v3/videos?id='.$videoid.'&key='.$apikey.'&part=snippet');
-$json2 = file_get_contents('https://www.googleapis.com/youtube/v3/videos?id='.$videoid.'&key='.$apikey.'&part=contentDetails');
-$ytdata = json_decode($json);
-$ytdata2 =json_decode($json2);
+    $videoid = explode("&", $videoid[1]); // Deleting any other params
+    $videoid = $videoid[0];
 
 
 
-$duration = $ytdata2->items[0]->contentDetails->duration;
-$interval = new DateInterval($duration);
-$durationsec = $interval->h * 3600 + $interval->i * 60 + $interval->s;
-$durationsec = $durationsec/60;
 
-$description = $ytdata->items[0]->snippet->title;
 
-$descriptionlength = strlen($description);
+    $apikey = 'AIzaSyC_CL8D4U0BV3Ng5_rIdUZ6aoA0gfNggoI';
 
-if($descriptionlength>15){
-  $description = substr($description, 0, 15);
+    $json = file_get_contents('https://www.googleapis.com/youtube/v3/videos?id='.$videoid.'&key='.$apikey.'&part=snippet');
+    $json2 = file_get_contents('https://www.googleapis.com/youtube/v3/videos?id='.$videoid.'&key='.$apikey.'&part=contentDetails');
+    $ytdata = json_decode($json);
+    $ytdata2 =json_decode($json2);
+
+
+
+    $duration = $ytdata2->items[0]->contentDetails->duration;
+    $interval = new DateInterval($duration);
+    $durationsec = $interval->h * 3600 + $interval->i * 60 + $interval->s;
+    $durationsec = $durationsec/60;
+
+    $description = $ytdata->items[0]->snippet->title;
+
+    $descriptionlength = strlen($description);
+
+    if($descriptionlength>15){
+      $description = substr($description, 0, 15);
+    }
+
+    // echo '<h1>Title: ' . $ytdata->items[0]->snippet->title . '</h1>';
+    // echo 'Description: ' . $ytdata->items[0]->snippet->description;
+    // INSERT into urls ('url','userName','description','duration','inserttime')values('BNeXlJW70KQ','arun','desc1',28,now());
+
+
+        $stmt = $db->prepare('INSERT INTO urls (url,userName,description,duration,inserttime) VALUES (:url, :userName, :description, :duration, now())');
+          $stmt->execute(array(
+            ':url' => $videoid,
+            ':userName' => $_SESSION['username'] ,
+            ':description' => $description."...",
+            ':duration' => $durationsec
+          ));
+
+
+      
+        } 
 }
 
-// echo '<h1>Title: ' . $ytdata->items[0]->snippet->title . '</h1>';
-// echo 'Description: ' . $ytdata->items[0]->snippet->description;
-// INSERT into urls ('url','userName','description','duration','inserttime')values('BNeXlJW70KQ','arun','desc1',28,now());
 
-
-		$stmt = $db->prepare('INSERT INTO urls (url,userName,description,duration,inserttime) VALUES (:url, :userName, :description, :duration, now())');
-			$stmt->execute(array(
-				':url' => $videoid,
-				':userName' => $_SESSION['username'] ,
-				':description' => $description."...",
-				':duration' => $durationsec
-			));
-
-
-	
-		} catch(PDOException $e) {
+catch(PDOException $e) {
 		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
 		}
 
@@ -73,7 +82,7 @@ if($descriptionlength>15){
 	}
 
 //define page title
-$title = 'Members Page';
+$title = 'YouSave-Home';
 
 //include header template
 require('layout/header.php'); 
