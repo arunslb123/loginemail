@@ -70,7 +70,7 @@ $(document).ready(function () {
                    if(data.songjson[i].time<=5){
 
                                   $("#displayvideo").append(
-                        '<div class="col-md-6 col-lg-4 movie-tile text-center col-centered bgvideo first" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                        '<div class="col-md-6 col-lg-4 movie-tile text-center col-centered bgvideo first embed-responsive embed-responsive-16by9" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
                             '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="100" height="100">' +
                             '<h4>' + data.songjson[i].title + '</h4>' + 
                         '</div>'
@@ -83,7 +83,7 @@ $(document).ready(function () {
                    if(data.songjson[i].time>5 && data.songjson[i].time<=10){
 
                                       $("#displayvideo").append(
-                        '<div class="col-md-6 col-lg-4 movie-tile text-center col-centered bgvideo second" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                        '<div class="col-md-6 col-lg-4 movie-tile text-center col-centered bgvideo second embed-responsive embed-responsive-16by9" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
                             '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="100" height="100">' +
                             '<h4>' + data.songjson[i].title + '</h4>' + 
                         '</div>'
@@ -96,7 +96,7 @@ $(document).ready(function () {
 
 
                                       $("#displayvideo").append(
-                        '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo col-centered third" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                        '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo col-centered third embed-responsive embed-responsive-16by9" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
                             '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="100" height="100">' +
                             '<h4>' + data.songjson[i].title + '</h4>' + 
                         '</div>'
@@ -109,7 +109,7 @@ $(document).ready(function () {
 
 
                                       $("#displayvideo").append(
-                        '<div class="col-md-6 col-lg-4 movie-tile text-center col-centered bgvideo fourth" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                        '<div class="col-md-6 col-lg-4 movie-tile text-center col-centered bgvideo fourth embed-responsive embed-responsive-16by9" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
                             '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="100" height="100">' +
                             '<h4>' + data.songjson[i].title + '</h4>' + 
                         '</div>'
@@ -142,7 +142,7 @@ $(document).ready(function () {
                        if(data.songjson[i].time<=5){
 
                                           $(".displayvideo").append(
-                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo embed-responsive embed-responsive-16by9" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
                                 '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
                                 '<h4>' + data.songjson[i].title + '</h4>' + 
                             '</div>'
@@ -169,7 +169,7 @@ $(document).ready(function () {
                        if(data.songjson[i].time>=5 && data.songjson[i].time<=10){
 
                                           $(".displayvideo").append(
-                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo embed-responsive embed-responsive-16by9" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
                                 '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
                                 '<h4>' + data.songjson[i].title + '</h4>' + 
                             '</div>'
@@ -197,7 +197,7 @@ $(document).ready(function () {
                        if(data.songjson[i].time>=10 && data.songjson[i].time<=20){
 
                                           $(".displayvideo").append(
-                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo embed-responsive embed-responsive-16by9" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
                                 '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
                                 '<h4>' + data.songjson[i].title + '</h4>' + 
                             '</div>'
@@ -224,7 +224,7 @@ $(document).ready(function () {
                        if(data.songjson[i].time>20){
 
                                           $(".displayvideo").append(
-                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo embed-responsive embed-responsive-16by9" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
                                 '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
                                 '<h4>' + data.songjson[i].title + '</h4>' + 
                             '</div>'
