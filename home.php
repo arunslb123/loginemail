@@ -265,7 +265,7 @@ require('layout/header.php');
 
 
       </div>
-      <div class="row-fluid displayvideo embed-responsive" id="displayvideo">
+      <div class="row-fluid displayvideo" id="displayvideo">
 
 
 
